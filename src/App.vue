@@ -4,14 +4,15 @@
  * @Author: Wuwenlong
  * @Date: 2021-04-09 15:33:54
  * @LastEditors: Wuwenlong
- * @LastEditTime: 2021-04-09 18:14:15
+ * @LastEditTime: 2021-04-12 14:27:40
 -->
 <template>
   <div id="app">
-    <keep-alive exclude="Detail">
-      <router-view />
-    </keep-alive>
+
     <main-tab-bar />
+
+    <router-view />
+
   </div>
 </template>
 
@@ -26,12 +27,5 @@ export default {
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+@import './assets/css/base.css';
 </style>
