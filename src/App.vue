@@ -1,17 +1,26 @@
+<!--
+ * @Descripttion: your project
+ * @version: 1.0
+ * @Author: Wuwenlong
+ * @Date: 2021-04-09 15:33:54
+ * @LastEditors: Wuwenlong
+ * @LastEditTime: 2021-04-09 18:14:15
+-->
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <keep-alive exclude="Detail">
+      <router-view />
+    </keep-alive>
+    <main-tab-bar />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import MainTabBar from "./components/content/maintabbar/MainTabBar";
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    MainTabBar
   }
 }
 </script>
