@@ -4,7 +4,7 @@
  * @Author: Wuwenlong
  * @Date: 2021-04-12 14:54:10
  * @LastEditors: Wuwenlong
- * @LastEditTime: 2021-04-12 18:06:29
+ * @LastEditTime: 2021-04-13 10:04:23
  */
 import { request } from "./request";
 
@@ -17,10 +17,11 @@ export function getHomeMultidata () {
 //首页请求商品列表
 export function getHomeGoods (type, page) {
   return request({
-    url: '/home/data',
+    url: "/home/data",
     params: {
       type,
       page
     }
   })
+
 }

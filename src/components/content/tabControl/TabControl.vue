@@ -4,7 +4,7 @@
  * @Author: Wuwenlong
  * @Date: 2021-04-12 16:18:05
  * @LastEditors: Wuwenlong
- * @LastEditTime: 2021-04-12 17:14:04
+ * @LastEditTime: 2021-04-13 14:06:06
 -->
 <template>
   <div class="tab-control">
@@ -38,6 +38,7 @@ export default {
   methods: {
     itemClick (index) {
       this.currentIndex = index
+      this.$emit('tabClick', index)
     }
   }
 };
